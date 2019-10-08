@@ -71,6 +71,37 @@ p {
     margin: 0 auto;
 }
 
+header {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    transition: all .5s;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    transform: scale(1.25);
+	transition: all .5s;
+}
+
+img.jumbo {
+    margin: 20px 0 30px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +143,25 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:hover {
+    transform: scale(1.25);
+    transition: all .5s;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.middle-content .boxes .box1{background-color: teal;}
+.middle-content .boxes .box2{background-color: gold;}
+.middle-content .boxes .box3{background-color: cadetblue;}
+.middle-content .boxes .box4{background-color: coral;}
+.middle-content .boxes .box5{background-color: crimson;}
+.middle-content .boxes .box6{background-color: forestgreen;}
+.middle-content .boxes .box7{background-color: darkorchid;}
+.middle-content .boxes .box8{background-color: hotpink;}
+.middle-content .boxes .box9{background-color: indigo;}
+.middle-content .boxes .box10{background-color: dodgerblue;}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +193,162 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About Page */
+
+.about-page .about-info {
+    border-bottom: 2px dotted black;
+    padding-bottom: 20px;
+}
+
+.about-page section.about-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.about-page section div{
+    width: 48%;
+    margin: 20px 0;
+    border-bottom: 2px dotted black;
+}
+
+img:hover {
+    transition: all .25s;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.about-page section div a.button {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 05px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+}
+
+.about-page section div a.button:hover{
+    transition: all .5s;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+section.learn-more {
+    margin: 30px 0;
+}
+
+section.learn-more p{
+    font-size: 14px;
+}
+
+section.contact-form {
+    margin-top: 30px;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+section.contact-form form {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-form form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    width: 65%;
+}
+
+.contact-form form div input, .contact-form form div textarea{
+    width: 58%;
+}
+
+.contact-form form div label{
+    width: 40%;
+    text-align: right;
+}
+
+.contact-form form div button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Blog Page */
+
+section.section-head {
+    margin: 30px 0 0;
+    border-top: 2px dotted black; 
+    border-bottom: 1px solid gray; 
+    padding: 20px 0 0;
+}
+
+section.section-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 20px 0;
+    border-bottom: 2px dotted black;
+    width: 100%;
+}
+
+section.section-more .section-column {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-content: flex-start;
+    width: 76%;
+}
+
+.article-fluff{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.article-fluff img {
+    width: 35%;
+}
+.article-fluff p {
+    width: 60%;
+}
+
+a.read-more {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 05px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    background-color: blue;
+}
+
+section.section-more .section-column div:nth-child(1) {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid gray; 
+}
+
+section.section-more .section-article {
+    width: 22%;
+    padding: 0 20px;
+    border-left: 1px solid gray;
+    align-self: stretch;
+}
+
+section.section-more .section-article img {
+    width: 100%;
+    margin: 10px 0 20px;
 }
